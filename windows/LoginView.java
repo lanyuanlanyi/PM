@@ -115,7 +115,7 @@ public class LoginView {
         button1.addActionListener(lal);
         button2.addActionListener(lal);
 
-
+/*      原lsl监听器----现使用lambda表达式进行替换以下
         ActionListener lsl=new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -130,7 +130,22 @@ public class LoginView {
 
             }
         };
+
         jcb2.addActionListener(lsl);
+        */
+
+        jcb2.addActionListener((e) -> {
+
+            if (jcb2.isSelected()) {
+                frame.setTitle("注册");
+                label.setText("Sign");
+            } else {
+                frame.setTitle("登录");
+                label.setText("Login");
+            }
+        });
+
+
 
 
 
