@@ -15,14 +15,13 @@ import java.net.Socket;
 /**
  * Created by 85168 on 2017/3/28.
  */
-class ChatView {
+class ChatView {        //修改IP在MainView的326行
 
+    public int i = (int) (Math.random() * 100);
     Socket s;
-
     JFrame frame;
     JTextArea ajTextArea;
     JTextField ajTextField;
-    public int i=(int) (Math.random() * 100);
 
     public ChatView(Socket s) {
         this.s = s;

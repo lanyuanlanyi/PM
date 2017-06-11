@@ -33,19 +33,16 @@ public class MainView {
     public  Container container;
     public JMenuBar bar;
     public JMenu plus;
-    Person ppersonmodify;
-    Person persontemp;
-
     public JButton button1;
     public JButton button2;
     public JButton button3;
-
     public JMenuItem item1;
     public JMenuItem item2;
     public JMenuItem item3;
     public JMenuItem item5;
     public JMenuItem item6;
-
+    Person ppersonmodify;
+    Person persontemp;
     PlusView pv=new PlusView();
     ModifyModel mm=new ModifyModel();
     SortTable st=new SortTable();
@@ -323,7 +320,7 @@ public class MainView {
 
                     Socket s= null;
                     try {
-                        s = new Socket(InetAddress.getByName("192.168.2.137"),8000);
+                        s = new Socket(InetAddress.getByName("192.168.1.106"), 8000);
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
